@@ -13,9 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Doja China Blog",
+  title: "DojaExchange — Оплата Китая, Alipay, WeChat Pay, ВЭД",
   description:
-    "Оплата Китая, Alipay, WeChat Pay, ВЭД и реальные кейсы бизнеса",
+    "DojaExchange — блог про оплату Китая, Alipay, WeChat Pay, ВЭД, переводы в юанях и реальные кейсы бизнеса.",
+  keywords: [
+    "DojaExchange",
+    "оплата Китая",
+    "Alipay",
+    "WeChat Pay",
+    "ВЭД Китай",
+    "переводы в Китай",
+    "оплата поставщиков Китай",
+  ],
 };
 
 export default function RootLayout({

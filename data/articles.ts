@@ -2,7 +2,7 @@ export const articles = [
   {
     title: "Как пополнить Alipay из России в 2026 году",
     slug: "kak-popolnit-alipay-iz-rossii",
-    category: "Alipay",
+    category: "ALIPAY",
     image: "/images/alipay.jpg",
     description: "Рабочие способы пополнения Alipay, комиссии, риски и сроки.",
     content: [
@@ -28,7 +28,7 @@ export const articles = [
   {
     title: "Банк или обменник: что выгоднее для оплаты Китая",
     slug: "bank-ili-obmennik-dlya-oplaty-kitaya",
-    category: "Сравнения",
+    category: "СРАВНЕНИЯ",
     image: "/images/hero.jpg",
     description: "Сравниваем комиссии, скорость, риски и удобство.",
     content: [
