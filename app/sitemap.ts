@@ -1,4 +1,11 @@
+import { articles } from "@/data/articles";
+
 export default function sitemap() {
+  const articleUrls = articles.map((article) => ({
+    url: 'https://doja-china-blog.vercel.app/articles/${article.slug}',
+    lastModified: new Date(),
+  }));
+
   return [
     {
       url: "https://doja-china-blog.vercel.app",
@@ -8,5 +15,6 @@ export default function sitemap() {
       url: "https://doja-china-blog.vercel.app/articles",
       lastModified: new Date(),
     },
+    ...articleUrls,
   ];
 }
