@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,10 +13,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "DojaExchange — Оплата Китая, Alipay, WeChat Pay, ВЭД",
+  
   description:
     "DojaExchange — блог про оплату Китая, Alipay, WeChat Pay, ВЭД, переводы в юанях и реальные кейсы бизнеса.",
+
   keywords: [
     "DojaExchange",
     "оплата Китая",
@@ -25,19 +28,24 @@ export const metadata = {
     "переводы в Китай",
     "оплата поставщиков Китай",
   ],
+
+  verification: {
+    google: "sbhhHcDLMuyd-fNxTR3P9SraH879SG-h-6g5UlGc8qs",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: ReactNode;
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="ru">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
